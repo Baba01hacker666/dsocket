@@ -1,0 +1,12 @@
+name = "dsocket-relay"
+main = "src/index.js"
+compatibility_date = "2024-09-01"
+
+[durable_objects]
+bindings = [
+  { name = "RELAY_DO", class_name = "RelaySession" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["RelaySession"]
